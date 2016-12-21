@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ZITOPaySDK_Example' do
+  pod 'ZITOPaySDK', :path => '../'
+
+  target 'ZITOPaySDK_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
