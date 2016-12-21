@@ -1,14 +1,14 @@
 10
 
 dir
-1276
+6344
 svn://lidongdong@10.10.40.60/P_ZITOPay/SRC/Web/1.0/trunk/zitopay-sdk/zitopay-moblie/zitopay_mobile_iosSDK/ZITOPay/ZITOPAYSDK/ZITOPay/Protocol
 svn://lidongdong@10.10.40.60/P_ZITOPay
 
 
 
-2016-09-27T01:02:02.494513Z
-1276
+2016-12-20T10:50:42.516764Z
+6250
 lidongdong
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2016-09-27T01:10:35.000000Z
-ba6c1976a32e88af520bf4391ac89d51
-2016-09-27T01:02:02.494513Z
-1276
-lidongdong
+2016-12-19T06:19:29.000000Z
+776539fa843d3988ce45136c0657d3cb
+2016-12-19T01:29:45.886942Z
+6015
+liqiong
 
 
 
@@ -58,52 +58,18 @@ lidongdong
 
 
 
-541
-
-ZITOPayAdapterProtocol.h
-file
-
-
-
-
-2016-09-27T01:10:35.000000Z
-8f51dc386d5af553c0d3ab24bdef8758
-2016-09-27T01:02:02.494513Z
-1276
-lidongdong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-822
+892
 
 ZITOPayAdapter.m
 file
+6345
 
 
 
-
-2016-09-27T01:10:35.000000Z
-3d0990332c692518fcf03013acb34e10
-2016-09-27T01:02:02.494513Z
-1276
+2016-12-21T05:18:10.000000Z
+606c33125cbe91a27e0c59317f37999b
+2016-12-21T06:49:47.681144Z
+6345
 lidongdong
 
 
@@ -126,5 +92,5 @@ lidongdong
 
 
 
-1760
+5501
 

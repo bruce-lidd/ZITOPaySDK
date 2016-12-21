@@ -6,8 +6,8 @@
 //  Copyright © 2016年 ldd. All rights reserved.
 //
 
-#import "ZITOPayResp.h"
-
+//#import "ZITOPayResp.h"
+#import "ZITOPayObjects.h"
 #pragma mark pay response
 @implementation ZITOPayResp
 

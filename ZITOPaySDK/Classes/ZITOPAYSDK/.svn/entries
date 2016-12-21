@@ -1,14 +1,14 @@
 10
 
 dir
-1276
+6344
 svn://lidongdong@10.10.40.60/P_ZITOPay/SRC/Web/1.0/trunk/zitopay-sdk/zitopay-moblie/zitopay_mobile_iosSDK/ZITOPay/ZITOPAYSDK
 svn://lidongdong@10.10.40.60/P_ZITOPay
 
 
 
-2016-09-27T01:02:02.494513Z
-1276
+2016-12-20T10:50:42.516764Z
+6250
 lidongdong
 
 
@@ -31,14 +31,14 @@ dir
 
 ZITOPayObjects.h
 file
+6345
 
 
 
-
-2016-09-27T01:10:35.000000Z
-1f9ea9647828bc88d5fffa6170cd60d0
-2016-09-27T01:02:02.494513Z
-1276
+2016-12-21T06:49:04.000000Z
+c63d3343b38562d34697b6d318be41f5
+2016-12-21T06:49:47.681144Z
+6345
 lidongdong
 
 
@@ -61,7 +61,7 @@ lidongdong
 
 
 
-336
+8014
 
 ZITOPay.h
 file
@@ -69,11 +69,11 @@ file
 
 
 
-2016-09-27T01:10:35.000000Z
-1a87de1ec3fa8361b743080de1a56f18
-2016-09-27T01:02:02.494513Z
-1276
-lidongdong
+2016-11-02T03:19:08.000000Z
+ace48b573daa8261e0422c0ba54eb7ce
+2016-11-02T03:08:19.465940Z
+3286
+liqiong
 
 
 
@@ -95,10 +95,41 @@ lidongdong
 
 
 
-3631
+3749
 
-Channel
-dir
+ZITOPayAdapterProtocol.h
+file
+
+
+
+
+2016-12-19T06:19:30.000000Z
+123be9375fb57ef7293b59d5657ee015
+2016-12-19T01:29:45.886942Z
+6015
+liqiong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1569
 
 ZITOPay.m
 file
@@ -106,11 +137,11 @@ file
 
 
 
-2016-09-27T01:10:35.000000Z
-51b1434193772e8ee74e7828da451f0b
-2016-09-27T01:02:02.494513Z
-1276
-lidongdong
+2016-11-02T03:19:08.000000Z
+905df430ecc100a306f2abb800a4a2c2
+2016-11-02T03:08:19.465940Z
+3286
+liqiong
 
 
 
@@ -132,5 +163,5 @@ lidongdong
 
 
 
-2751
+3327
 

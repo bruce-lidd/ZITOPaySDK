@@ -1,14 +1,14 @@
 10
 
 dir
-1276
+6344
 svn://lidongdong@10.10.40.60/P_ZITOPay/SRC/Web/1.0/trunk/zitopay-sdk/zitopay-moblie/zitopay_mobile_iosSDK/ZITOPay/ZITOPAYSDK/ZITOPay/Classes
 svn://lidongdong@10.10.40.60/P_ZITOPay
 
 
 
-2016-09-27T01:02:02.494513Z
-1276
+2016-12-20T10:50:42.516764Z
+6250
 lidongdong
 
 
@@ -29,42 +29,6 @@ lidongdong
 ZITOBase
 dir
 
-ZITOPreRefund
-dir
-
-ZITOQueryBills
-dir
-
-ZITOQueryRefunds
-dir
-
-ZITOQueryBillById
-dir
-
-ZITOAuth
-dir
-
-ZITOQueryRefundById
-dir
-
-ZITOResults
-dir
-
 ZITOPayBase
-dir
-
-ZITOQueryBillsCount
-dir
-
-ZITOSubscription
-dir
-
-ZITOQueryRefundsCount
-dir
-
-ZITOPayPal
-dir
-
-ZITOQueryfundStatus
 dir
 

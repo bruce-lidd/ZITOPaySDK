@@ -284,7 +284,7 @@
                         downloadProgress:downloadProgress
                        completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
                            if (error) {
-                               if (failure) {
+                                      if (failure) {
                                    failure(dataTask, error);
                                }
                            } else {

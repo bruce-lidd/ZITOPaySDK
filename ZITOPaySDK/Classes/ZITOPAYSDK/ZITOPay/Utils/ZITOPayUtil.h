@@ -5,10 +5,9 @@
 //  Created by 李冬冬 on 16/9/22.
 //  Copyright © 2016年 ldd. All rights reserved.
 //
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
 #import "ZITONetworking.h"
-#import "ZITOPayConstant.h"
 #import "ZITOPayCache.h"
 #import "ZITOPayObjects.h"
 
@@ -33,20 +32,18 @@
 /**
  *  prepare parameters
  *
- *  @param block result block
- *
- *  @return default request map
  */
-+ (NSMutableDictionary *)prepareParametersForRequest:(ZITOPayReq *)payReq;
++ (NSMutableDictionary *)prepareParametersForRequest:(NSString *)billNo totalFee:(NSString *)totalFee;
 
 /**
  *  生成签名
  *
- *  @param timeStamp 当前时间戳
+ *  @param username 用户名
+ *  @param totalprice 单价金额
  *
  *  @return 签名
  */
-+ (NSString *)getAppSignature:(NSString *)timeStamp;
++ (NSString *)getAppSignature:(NSString *)username totalprice:(NSString *)totalprice;
 
 /**
  *  获取url的类型，微信或者支付宝
@@ -64,7 +61,7 @@
  *
  *  @return url
  */
-+ (NSString *)getBestHostWithFormat:(NSString *)format;
++ (NSString *)getBestHostWithFormat:(NSString *)format currentMode:(BOOL)currentMode;
 
 /**
  *  get Channel String
@@ -136,7 +133,7 @@
 /**
  *  Convert date String @"yyyy-MM-dd HH:mm" to int64 (long long) for the value of millisecond.
  *
- *  @param date NSDate object to be converted.
+ *  @param string NSDate object to be converted.
  *
  *  @return Number of milliseconds in the format of 1400000000000.
  */
@@ -215,6 +212,36 @@
  */
 + (NSUInteger)getBytes:(NSString *)str;
 
+/**
+ *  A string's bytes
+ *
+ *  @param dic string
+ *
+ *  @return the string's bytes
+ */
++ (NSString*)dictionaryToJson:(NSDictionary *)dic;
+/**
+ * 将二进制颜色转换成rgb
+ *param color :二进制颜色
+ */
++ (UIColor *)colorWithHexString:(NSString *)color;
+/**
+ * 校验银行卡
+ *param cardNo :银行卡号
+ */
++ (BOOL)checkCardNo:(NSString*)cardNo;
+/**
+ * @brief 把格式化的JSON格式字符串转成字典
+ * @param jsonString :JSON格式的字符串
+ * @return 返回字典
+ */
++ (NSMutableDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
+/**
+ * 从bundle资源文件夹获取图片
+ * @param imgName : 图片名称
+ * @return 返回图片
+ */
++ (UIImage *)imagesNamedFromCustomBundle:(NSString *)imgName;
 @end
 
 FOUNDATION_EXPORT void ZITOPayLog(NSString *format,...) NS_FORMAT_FUNCTION(1,2) ;

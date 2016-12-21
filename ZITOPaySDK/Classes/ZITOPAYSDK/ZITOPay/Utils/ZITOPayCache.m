@@ -6,8 +6,9 @@
 //  Copyright © 2016年 ldd. All rights reserved.
 //
 
-#import "ZITOPayCache.h"
-#import "ZITOPayConstant.h"
+//#import "ZITOPayCache.h"
+//#import "ZITOPayConstant.h"
+#import "ZITOPayObjects.h"
 #import "ZITOPay.h"
 
 @implementation ZITOPayCache
@@ -18,6 +19,7 @@
     dispatch_once(&onceToken, ^{
         instance = [[ZITOPayCache alloc] init];
         
+        instance.zitoId = nil;
         instance.appId = nil;
         instance.appSecret = nil;
         instance.sandbox = NO;

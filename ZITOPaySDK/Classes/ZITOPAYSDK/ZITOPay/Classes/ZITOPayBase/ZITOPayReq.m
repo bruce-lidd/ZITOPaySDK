@@ -6,15 +6,15 @@
 //  Copyright © 2016年 ldd. All rights reserved.
 //
 
-
-#import "ZITOPayReq.h"
 #import "ZITOPayUtil.h"
 #import "ZITOPayAdapter.h"
 #import "ZITOPay.h"
+#import "ZITOPayRequest.h"
+#import "ZITOCategory.h"
+#import <CommonCrypto/CommonDigest.h>
 #pragma mark pay request
 
 @implementation ZITOPayReq
-
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -38,16 +38,21 @@
     
     NSString *cType = [ZITOPayUtil getChannelNumString:self.channel];
     
-    NSMutableDictionary *parameters = [ZITOPayUtil prepareParametersForRequest:self];
+    NSMutableDictionary *parameters = [ZITOPayUtil prepareParametersForRequest:self.billNo totalFee:self.totalFee];
     if (parameters == nil) {
         [ZITOPayUtil doErrorResponse:@"请检查是否全局初始化"];
         return;
     }
     //通道编号
     parameters[@"gid"] = cType;
-    parameters[@"totalPrice"] = [NSNumber numberWithInteger:[self.totalFee integerValue]];
+    parameters[@"totalPrice"] = self.totalFee;
     parameters[@"orderidinf"] = self.billNo;
     parameters[@"ordertitle"] = self.title;
+    parameters[@"appid"] = [ZITOPayCache sharedInstance].appId;
+    parameters[@"currency"] = self.currency;
+    parameters[@"bgRetUrl"] = self.bgRetUrl;
+    parameters[@"retUrl"] = self.retUrl;
+    parameters[@"returnUrl"] = self.returnUrl;
     
     if(self.goodsname){
         parameters[@"goodsname"] = self.goodsname;
@@ -57,15 +62,6 @@
         parameters[@"goodsdetail"] = self.goodsdetail;
     }
     
-    //后台回调暂时没用先写为test
-    if (self.bgRetUrl) {
-        parameters[@"bgRetUrl"] = @"test";
-    }
-    
-//    if (self.billTimeOut > 0) {
-//        parameters[@"bill_timeout"] = @(self.billTimeOut);
-//    }
-    
     if (self.optional) {
         parameters[@"optional"] = self.optional;
     }
@@ -73,21 +69,31 @@
     if (self.analysis) {
         parameters[@"analysis"] = self.analysis;
     }
+    
+    if (self.channel == PayChannelSumaQuick) {
+        parameters[@"userIdIdentity"] =self.idCard;
+    }
     __weak ZITOPayReq *weakSelf = self;
     
-    [ZITOPayRequest POST:kRestApiPay parameters:parameters resultBlock:^(id object) {
-        if ([ZITOPayCache sharedInstance].sandbox) {
-            [weakSelf doPayActionInSandbox:(NSDictionary *)object];
-        } else {
-            [weakSelf doPayAction:(NSDictionary *)object];
-        }
-    }];
+    if ( self.channel == PayChannelSumaQuick || self.channel == PayChannelChangQuick || self.channel == PayChannelBarCode || self.channel == PayChannelScanCode) {
+        parameters[@"phone"] = @"1";
+        [self doPayAction:parameters];
+    }else{
+        [ZITOPayRequest POST:@"" parameters:parameters currentMode:[ZITOPay getCurrentMode] resultBlock:^(id object) {
+            if (object) {
+                [weakSelf doPayAction:(NSDictionary *)object];
+            }
+            
+        }];
+    }
+    
 }
+
 
 #pragma mark - Pay Action
 
 - (BOOL)doPayAction:(NSDictionary *)response {
-    BOOL bSendPay = NO;
+    BOOL ZSendPay = NO;
     if (response) {
         NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:
                                     (NSDictionary *)response];
@@ -95,34 +101,118 @@
             
             [dic setObject:self.scheme forKey:@"scheme"];
             
+        }else if (self.channel == PayChannelApplePay || self.channel == PayChannelApplePayTest ||self.channel == PayChannelSumaQuick || self.channel == PayChannelChangQuick || self.channel == PayChannelYongYiUnion || self.channel == PayChannelJDUnion || self.channel == PayChannelBarCode || self.channel == PayChannelScanCode || self.channel == PayChannelFuQuickPay) {
+            
+            [dic setObject:self.viewController forKey:@"viewController"];
+            
+            if (self.channel == PayChannelApplePayTest || self.channel == PayChannelApplePay || self.channel == PayChannelYongYiUnion) {
+                
+                [dic setObject:@(self.channel) forKey:@"channel"];
+                
+            }
         }
+        
         [ZITOPayCache sharedInstance].ZITOResp.ZITOId = [dic objectForKey:@"id"];
+        
         switch (self.channel) {
             case PayChannelWxApp:
-                bSendPay = [ZITOPayAdapter ZITOPayWXPay:dic];
+                ZSendPay = [ZITOPayAdapter ZITOPayWXPay:dic];
+                break;
+            case PayChannelWorthTechWXPay:
+                if (dic[@"result"]) {
+                    NSDictionary *resultDic = [ZITOPayUtil dictionaryWithJsonString:dic[@"result"]];
+                    if (resultDic[@"prepayid"]) {
+                        NSMutableDictionary *prepayidDic = [ZITOPayUtil dictionaryWithJsonString:resultDic[@"prepayid"]];
+                        ZSendPay = [ZITOPayAdapter ZITOPayWXPay:prepayidDic];
+                    }
+            }
                 break;
             case PayChannelAliApp:
-                bSendPay = [ZITOPayAdapter ZITOPayAliPay:dic];
+                ZSendPay = [ZITOPayAdapter ZITOPayAliPay:dic];
+                break;
+            case PayChannelYongYiAliApp:
+                ZSendPay = [ZITOPayAdapter ZITOPayYongYiUnionPay:dic];
+                break;
+            case PayChannelChangQuick:
+                ZSendPay = [ZITOPayAdapter ZITOPayChanQuickPay:dic];
+                break;
+            case PayChannelSumaQuick:
+                ZSendPay = [ZITOPayAdapter ZITOPaySumaQuickPay:dic];
+                break;
+            case PayChannelYongYiUnion:
+                ZSendPay = [ZITOPayAdapter ZITOPayYongYiUnionPay:dic];
+                break;
+            case PayChannelJDUnion:
+                ZSendPay = [ZITOPayAdapter ZITOPayJDUnionPay:dic];
+                break;
+            case PayChannelBarCode:
+                ZSendPay = [ZITOPayAdapter ZITOPayBarCodePay:dic];
+                break;
+            case PayChannelScanCode:
+                ZSendPay = [ZITOPayAdapter ZITOPayScanCodePay:dic];
+            case PayChannelApplePay:
+            case PayChannelApplePayTest:
+                ZSendPay = [ZITOPayAdapter ZITOPayApplePay:dic];
+                break;
+            case PayChannelFuQuickPay:
+                ZSendPay = [ZITOPayAdapter ZITOPayFuQuickPay:dic];
                 break;
             default:
                 break;
         }
     }
-    return bSendPay;
+    return ZSendPay;
 }
-
-- (BOOL)doPayActionInSandbox:(NSDictionary *)response {
-    
-    if (response) {
-        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:
-                                    (NSDictionary *)response];
-        [ZITOPayCache sharedInstance].ZITOResp.ZITOId = [dic objectForKey:@"id"];
-        [ZITOPayAdapter ZITOPaySandboxPay];
-        return YES;
+//test
+-(NSString*)createMd5Sign:(NSMutableDictionary*)dict
+{
+    NSMutableString *contentString =[NSMutableString string];
+    NSArray *keys = [dict allKeys];
+    //按字母顺序排序
+    NSArray *sortedArray = [keys sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [obj1 compare:obj2 options:NSNumericSearch];
+    }];
+    //拼接字符串
+    for (NSString *categoryId in sortedArray) {
+        if (  ![[dict objectForKey:categoryId] isEqualToString:@""]
+            && ![categoryId isEqualToString:@"sign"]
+            && ![categoryId isEqualToString:@"key"]
+            )
+        {
+            [contentString appendFormat:@"%@=%@&", categoryId, [dict objectForKey:categoryId]];
+        }
     }
-    return NO;
+    //添加key字段
+    [contentString appendFormat:@"key=%@", @"f29cfcc03c4791f16081ed4d277e0f46"];
+    //得到MD5 sign签名
+    NSString *md5Sign =[ZITOPayUtil stringToMD5:contentString];
+    return md5Sign;
 }
+- (NSString *)getTimeStmp{
+    NSString* timeString = [NSString stringWithFormat:@"%.0f",[[NSDate date] timeIntervalSince1970]];
+    return timeString;
+}
+- (NSString *)getNoncestr:(NSString *)input
+{
+    const char* str = [input UTF8String];
+    
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    
+    CC_MD5(str, (CC_LONG)strlen(str), result);
+    
+    
+    NSMutableString* ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
+    
+    for(int i = 0 ;i <CC_MD5_DIGEST_LENGTH;i++) {
 
+        [ret appendFormat:@"%02X",result[i]];
+        
+    }
+    
+    NSLog(@"%@",[ret uppercaseString]);
+    return [ret uppercaseString];
+
+}
 - (BOOL)checkParametersForReqPay {
     if (!self.title.isValid || [ZITOPayUtil getBytes:self.title] > 32) {
         [ZITOPayUtil doErrorResponse:@"title 必须是长度不大于32个字节,最长16个汉字的字符串的合法字符串"];

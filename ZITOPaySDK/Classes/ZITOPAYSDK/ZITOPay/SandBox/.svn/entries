@@ -1,15 +1,15 @@
 10
 
 dir
-1276
+6344
 svn://lidongdong@10.10.40.60/P_ZITOPay/SRC/Web/1.0/trunk/zitopay-sdk/zitopay-moblie/zitopay_mobile_iosSDK/ZITOPay/ZITOPAYSDK/ZITOPay/SandBox
 svn://lidongdong@10.10.40.60/P_ZITOPay
 
 
 
-2016-09-27T01:02:02.494513Z
-1276
-lidongdong
+2016-11-02T03:08:19.465940Z
+3286
+liqiong
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2016-09-27T01:10:35.000000Z
-8b80453cb600bcc3fb5e636dd1e46543
-2016-09-27T01:02:02.494513Z
-1276
-lidongdong
+2016-11-04T11:08:43.000000Z
+4bf170d1d62555c95d29a32c0ab5e749
+2016-11-02T03:08:19.465940Z
+3286
+liqiong
 
 
 
@@ -58,12 +58,9 @@ lidongdong
 
 
 
-8568
+8696
 
 ZITOSandBoxAdapter
-dir
-
-ZITOPay.bundle
 dir
 
 PaySandBoxViewController.h
@@ -72,11 +69,11 @@ file
 
 
 
-2016-09-27T01:10:35.000000Z
+2016-11-04T11:08:43.000000Z
 4651404f376cd495e2f24c8ce0f1883f
-2016-09-22T08:25:05.956778Z
-1110
-lidongdong
+2016-11-02T03:08:19.465940Z
+3286
+liqiong
 
 
 

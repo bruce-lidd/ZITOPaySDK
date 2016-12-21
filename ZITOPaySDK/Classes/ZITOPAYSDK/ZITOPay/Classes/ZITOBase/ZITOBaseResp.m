@@ -6,8 +6,8 @@
 //  Copyright © 2016年 ldd. All rights reserved.
 //
 
-#import "ZITOBaseResp.h"
-
+//#import "ZITOBaseResp.h"
+#import "ZITOPayObjects.h"
 #pragma mark base response
 @implementation ZITOBaseResp
 

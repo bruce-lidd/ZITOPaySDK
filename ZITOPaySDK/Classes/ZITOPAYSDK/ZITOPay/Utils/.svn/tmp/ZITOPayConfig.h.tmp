@@ -1,0 +1,42 @@
+//
+//  ZITOPayConfig.h
+//  ZITOPay
+//
+//  Created by 李冬冬 on 16/10/21.
+//  Copyright © 2016年 ldd. All rights reserved.
+//
+
+#ifndef ZITOPayConfig_h
+#define ZITOPayConfig_h
+
+static NSString * const kApiVersion = @"1.0.0";//api版本号
+
+static NSString * const kNetWorkError = @"网络请求失败";
+static NSString * const kUnknownError = @"未知错误";
+static NSString * const kKeyResponseResultCode = @"result_code";
+static NSString * const kKeyResponseResultMsg = @"result_msg";
+static NSString * const kKeyResponseErrDetail = @"err_detail";
+
+#pragma mark++++++++++测试地址++++++++++++++
+static NSString * const kTESTZITOHost = @"http://10.10.40.114:8082/service/api/controller/zitopay/ToPayAppController/topayByApp";
+//static NSString * const kTESTZITOHost = @"http://58.247.43.134:8086/service/api/controller/zitopay/ToPayAppController/topayByApp";
+
+static NSString * const kTESTZITOSUMAURL = @"http://10.10.40.114:8082/service/payH5/ffkjpay";
+//static NSString * const kTESTZITOSUMAURL = @"http://172.16.50.23:8086/service/payH5/ffkjpay";
+
+
+#pragma mark++++++++++正式地址++++++++++++++
+static NSString * const kFORMALZITOHost = @"http://172.16.30.20:8087/zitopay-api-web/service/api/controller/zitopay/ToPayAppController/topayByApp";
+static NSString * const kFORMALZITOSUMAURL = @"http://172.16.50.15:8899/service/payH5/ffkjpay";
+
+static NSString * const kZITODateFormat = @"yyyyMMddhhmmssSSS";
+
+//Adapter
+static NSString * const kAdapterWXPay = @"ZITOWXPayAdapter";
+static NSString * const kAdapterAliPay = @"ZITOAliPayAdapter";
+static NSString * const kAdapterSumaPay = @"ZITOSumaPayAdapter";
+static NSString * const kAdapterChanPay = @"ZITOChanPayAdapter";
+static NSString * const kAdapterYongYiPay = @"ZITOYongYiPayAdapter";
+static NSString * const kAdapterApplePay = @"ZITOApplePayAdapter";
+
+#endif /* ZITOPayConfig_h */

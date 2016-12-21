@@ -8,16 +8,19 @@
 #import "ZITOPayUtil.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "ZITOPayCache.h"
-
+#import <UIKit/UIKit.h>
+#import "ZITOPayConfig.h"
+#import "ZITOCategory.h"
 @implementation ZITOPayUtil
 
 + (ZITOHTTPSessionManager *)getZITOHTTPSessionManager {
     ZITOHTTPSessionManager *manager = [ZITOHTTPSessionManager manager];
-    manager.securityPolicy.allowInvalidCertificates = NO;
-    manager.requestSerializer = [ZITOJSONRequestSerializer serializer];
+    [manager.securityPolicy setAllowInvalidCertificates:NO];
+    //如果报接受类型不一致请替换一致text/html或别的
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
+//    manager.responseSerializer = [ZITOJSONResponseSerializer serializer];
     return manager;
 }
-
 + (NSMutableDictionary *)getWrappedParametersForGetRequest:(NSDictionary *) parameters {
     NSData *parameterData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
     NSString *parameterString = [[NSString alloc] initWithBytes:[parameterData bytes] length:[parameterData length]
@@ -27,13 +30,13 @@
     return paramWrapper;
 }
 
-+ (NSMutableDictionary *)prepareParametersForRequest:(ZITOPayReq *)payReq {
++ (NSMutableDictionary *)prepareParametersForRequest:(NSString *)billNo totalFee:(NSString *)totalFee {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    NSNumber *posttime = [NSNumber numberWithLongLong:[ZITOPayUtil dateToMillisecond:[NSDate date]]];
-    NSString *appSign = [ZITOPayUtil getAppSignature:payReq.username totalprice:payReq.totalFee];
+    NSString *posttime = [ZITOPayUtil dateToString:[NSDate date]];
+    NSString *appSign = [ZITOPayUtil getAppSignature:billNo totalprice:totalFee];
     if(appSign) {
-        [parameters setObject:[ZITOPayCache sharedInstance].appId forKey:@"id"];
-        [parameters setObject:payReq.username forKey:@"username"];
+        [parameters setObject:[ZITOPayCache sharedInstance].zitoId forKey:@"id"];
+        [parameters setObject:billNo forKey:@"billNo"];
         [parameters setObject:posttime forKey:@"posttime"];
         [parameters setObject:appSign forKey:@"sign"];
         return parameters;
@@ -41,14 +44,16 @@
     return nil;
 }
 
-+ (NSString *)getAppSignature:(NSString *)username totalprice:(NSString *)totalprice{
++ (NSString *)getAppSignature:(NSString *)billNo totalprice:(NSString *)totalprice{
+    NSString *zitoId = [ZITOPayCache sharedInstance].zitoId;
     NSString *appid = [ZITOPayCache sharedInstance].appId;
     NSString *appsecret = [ZITOPayCache sharedInstance].appSecret;
     
     if (!appid.isValid || !appsecret.isValid)
         return nil;
     
-    NSString *input = [appid stringByAppendingString:username];
+    NSString *input = [zitoId stringByAppendingString:appid];
+    input = [input stringByAppendingString:billNo];
     input = [input stringByAppendingString:totalprice];
     input = [input stringByAppendingString:appsecret];
     const char* str = [input UTF8String];
@@ -70,48 +75,27 @@
         return ZITOPayUrlUnknown;
 }
 
-+ (NSString *)getBestHostWithFormat:(NSString *)format {
-    NSString *verHost = [NSString stringWithFormat:@"%@%@", kZITOHost, reqApiVersion];
-    return [NSString stringWithFormat:format, verHost, [ZITOPayCache sharedInstance].sandbox ? @"/sandbox" : @""];
++ (NSString *)getBestHostWithFormat:(NSString *)format currentMode:(BOOL)currentMode{
+    //    return [NSString stringWithFormat:format, verHost, [ZITOPayCache sharedInstance].sandbox ? @"/sandbox" : @""];
+    if (currentMode) {
+        return [NSString stringWithFormat:@"%@%@", kTESTZITOHost, kZITOAPI];
+    }else{
+        return [NSString stringWithFormat:@"%@%@", kFORMALZITOHost, kZITOAPI];
+    }
 }
 
 + (NSString *)getChannelNumString:(PayChannel)channel {
-    NSString *cType = @"";
-    switch (channel) {
-#pragma mark PayChannel_WX
-        case PayChannelWx:
-            cType = @"WX";
-            break;
-        case PayChannelWxApp:
-            cType = @"WX_APP";
-            break;
-#pragma mark PayChannel_ALI
-        case PayChannelAli:
-            cType = [NSString stringWithFormat:@"%ld",channel];
-            break;
-        case PayChannelAliApp:
-            cType = @"ALI_APP";
-            break;
-        default:
-            break;
-    }
-    return cType;
+    return  [NSString stringWithFormat:@"%ld",(long)channel];
 }
 
 + (NSString *)getChannelString:(PayChannel)channel {
     NSString *cType = @"";
     switch (channel) {
 #pragma mark PayChannel_WX
-        case PayChannelWx:
-            cType = @"WX";
-            break;
         case PayChannelWxApp:
             cType = @"WX_APP";
             break;
 #pragma mark PayChannel_ALI
-        case PayChannelAli:
-            cType = @"ALI";
-            break;
         case PayChannelAliApp:
             cType = @"ALI_APP";
             break;
@@ -178,7 +162,6 @@
     [dateFormatter setDateFormat:kZITODateFormat];
     return [dateFormatter stringFromDate:date];
 }
-
 + (NSString *)stringToMD5:(NSString *)string {
     if(string == nil || [string isEqualToString:@""]) return @"";
     const char *cStr = [string UTF8String];
@@ -221,7 +204,120 @@
     }
 }
 
++ (NSString*)dictionaryToJson:(NSDictionary *)dic
+
+{
+    
+    NSError *parseError = nil;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+}
+
++ (UIColor *)colorWithHexString:(NSString *)color {
+    
+    NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    
+    // String should be 6 or 8 characters
+    if ([cString length] < 6) {
+        return [UIColor clearColor];
+    }
+    
+    // strip 0X if it appears
+    if ([cString hasPrefix:@"0X"])
+        cString = [cString substringFromIndex:2];
+    if ([cString hasPrefix:@"#"])
+        cString = [cString substringFromIndex:1];
+    if ([cString length] != 6)
+        return [UIColor clearColor];
+    
+    // Separate into r, g, b substrings
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    
+    //r
+    NSString *rString = [cString substringWithRange:range];
+    
+    //g
+    range.location = 2;
+    NSString *gString = [cString substringWithRange:range];
+    
+    //b
+    range.location = 4;
+    NSString *bString = [cString substringWithRange:range];
+    
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    
+    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
+}
+
++ (BOOL)checkCardNo:(NSString*)cardNo{
+    int oddsum = 0;     //奇数求和
+    int evensum = 0;    //偶数求和
+    int allsum = 0;
+    int cardNoLength = (int)[cardNo length];
+    int lastNum = [[cardNo substringFromIndex:cardNoLength-1] intValue];
+    
+    cardNo = [cardNo substringToIndex:cardNoLength - 1];
+    for (int i = cardNoLength -1 ; i>=1;i--) {
+        NSString *tmpString = [cardNo substringWithRange:NSMakeRange(i-1, 1)];
+        int tmpVal = [tmpString intValue];
+        if (cardNoLength % 2 ==1 ) {
+            if((i % 2) == 0){
+                tmpVal *= 2;
+                if(tmpVal>=10)
+                    tmpVal -= 9;
+                evensum += tmpVal;
+            }else{
+                oddsum += tmpVal;
+            }
+        }else{
+            if((i % 2) == 1){
+                tmpVal *= 2;
+                if(tmpVal>=10)
+                    tmpVal -= 9;
+                evensum += tmpVal;
+            }else{
+                oddsum += tmpVal;
+            }
+        }
+    }
+    allsum = oddsum + evensum;
+    allsum += lastNum;
+    if((allsum % 10) == 0)
+        return YES;
+    else
+        return NO;
+}
+
++ (NSMutableDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if(!jsonString){
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+    return dic;
+}
+
+
+#pragma mark - 从bundle文件夹读取图片
++ (UIImage *)imagesNamedFromCustomBundle:(NSString *)imgName {
+    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"ZITOPay.bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    NSString *img_path = [bundle pathForResource:imgName ofType:@"png"];
+    return [UIImage imageWithContentsOfFile:img_path];
+}
 @end
+
+
+
 
 void ZITOPayLog(NSString *format,...) {
     if ([ZITOPayCache sharedInstance].willPrintLogMsg) {
@@ -231,3 +327,5 @@ void ZITOPayLog(NSString *format,...) {
         va_end(list);
     }
 }
+
+

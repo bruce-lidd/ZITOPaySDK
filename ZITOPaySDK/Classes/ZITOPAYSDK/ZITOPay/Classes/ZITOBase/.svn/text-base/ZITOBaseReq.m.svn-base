@@ -6,8 +6,8 @@
 //  Copyright © 2016年 ldd. All rights reserved.
 //
 
-#import "ZITOBaseReq.h"
-
+//#import "ZITOBaseReq.h"
+#import "ZITOPayObjects.h"
 #pragma makr base request
 @implementation ZITOBaseReq
 

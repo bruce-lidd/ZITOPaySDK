@@ -6,20 +6,18 @@
 //  Copyright © 2016年 ldd. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-
-#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//
+//
+//#import <UIKit/UIKit.h>
 #import "ZITOPayObjects.h"
-#import "ZITOPayConstant.h"
-
 #pragma mark - ZITODelegate
 
 @protocol ZITOPayDelegate <NSObject>
 @required
 /**
  *  不同类型的请求，对应不同的响应
- *
+ *  此回调方法，在丰付快捷M＋、畅捷通、甬易银联支付不需要处理
  *  @param resp 响应体
  */
 - (void)onZITOPayResp:(ZITOBaseResp *)resp;
@@ -44,7 +42,7 @@
  *
  *  @return 初始化成功返回YES; 若appId或者appSecret不合法，初始化失败返回NO
  */
-+ (BOOL)initWithAppID:(NSString *)appId andAppSecret:(NSString *)appSecret;
++ (BOOL)initWithZitoID:(NSString *)zitoId appId:(NSString *)appId andAppSecret:(NSString *)appSecret;
 
 /**
  *  全局初始化
@@ -55,7 +53,7 @@
  *
  *  @return 初始化成功返回YES；失败返回NO
  */
-+ (BOOL)initWithAppID:(NSString *)appId andAppSecret:(NSString *)appSecret sandbox:(BOOL)isSandbox;
++ (BOOL)initWithZitoID:(NSString *)zitoId appId:(NSString *)appId andAppSecret:(NSString *)appSecret sandbox:(BOOL)isSandbox;
 
 /**
  *  需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。
@@ -66,8 +64,6 @@
  *  @return 成功返回YES，失败返回NO。只有YES的情况下，才能正常执行微信支付。
  */
 + (BOOL)initWeChatPay:(NSString *)wxAppID;
-
-
 /**
  * 处理通过URL启动App时传递的数据。需要在application:openURL:sourceApplication:annotation:中调用。
  *
@@ -112,7 +108,7 @@
  *  @param cardType  0 表示不区分卡类型；1 表示只支持借记卡；2 表示支持信用卡；
  *  @return YES表示支持
  */
-+ (BOOL)canMakeApplePayments:(NSUInteger)cardType;
+//+ (BOOL)canMakeApplePayments:(NSUInteger)cardType;
 
 /**
  *  获取API版本号

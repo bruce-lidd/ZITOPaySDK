@@ -24,6 +24,12 @@
 
 #import "ZITOURLRequestSerialization.h"
 
+#ifdef DEBUG
+#define LOG(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define LOG(format, ...)
+#endif
+
 #if TARGET_OS_IOS || TARGET_OS_WATCH || TARGET_OS_TV
 #import <MobileCoreServices/MobileCoreServices.h>
 #else
@@ -501,7 +507,7 @@ forHTTPHeaderField:(NSString *)field
             }
         }
     }
-    
+    LOG(@"-----http---%@?%@", request.URL,query);
     if ([self.HTTPMethodsEncodingParametersInURI containsObject:[[request HTTPMethod] uppercaseString]]) {
         if (query && query.length > 0) {
             mutableRequest.URL = [NSURL URLWithString:[[mutableRequest.URL absoluteString] stringByAppendingFormat:mutableRequest.URL.query ? @"&%@" : @"?%@", query]];

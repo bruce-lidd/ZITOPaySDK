@@ -8,7 +8,8 @@
 
 #import "PaySandboxViewController.h"
 #import "ZITOPay.h"
-
+#import "ZITOPayConfig.h"
+#import "NSDictionary+Utils.h"
 @interface PaySandBoxViewController () {
     UIStatusBarStyle statusStyle;
     
@@ -170,18 +171,18 @@
     
     [loading startAnimating];
     
-    NSString *host = [NSString stringWithFormat:@"%@%@/%@", [ZITOPayUtil getBestHostWithFormat:kRestApiSandboxNotify], [ZITOPayCache sharedInstance].appId, [ZITOPayCache sharedInstance].ZITOResp.ZITOId];
-    NSLog(@"sandboxPay id = %@", [ZITOPayCache sharedInstance].ZITOResp.ZITOId);
-    ZITOHTTPSessionManager *manager = [ZITOPayUtil getZITOHTTPSessionManager];
-    __weak PaySandBoxViewController *weakSelf = self;
-    [manager GET:host parameters:nil progress:nil
-         success:^(NSURLSessionTask *task, id response) {
-             ZITOPayLog(@"resp = %@", response);
-             [weakSelf doNotifyResponse:(NSDictionary *)response];
-         } failure:^(NSURLSessionTask *operation, NSError *error) {
-             [loading stopAnimating];
-             [ZITOPayUtil doErrorResponse:kNetWorkError];
-         }];
+    //    NSString *host = [NSString stringWithFormat:@"%@%@/%@", [ZITOPayUtil getBestHostWithFormat:kRestApiSandboxNotify], [ZITOPayCache sharedInstance].appId, [ZITOPayCache sharedInstance].ZITOResp.ZITOId];
+    //    NSLog(@"sandboxPay id = %@", [ZITOPayCache sharedInstance].ZITOResp.ZITOId);
+    //    ZITOHTTPSessionManager *manager = [ZITOPayUtil getZITOHTTPSessionManager];
+    //    __weak PaySandBoxViewController *weakSelf = self;
+    //    [manager GET:host parameters:nil progress:nil
+    //         success:^(NSURLSessionTask *task, id response) {
+    //             ZITOPayLog(@"resp = %@", response);
+    //             [weakSelf doNotifyResponse:(NSDictionary *)response];
+    //         } failure:^(NSURLSessionTask *operation, NSError *error) {
+    //             [loading stopAnimating];
+    //             [ZITOPayUtil doErrorResponse:kNetWorkError];
+    //         }];
 }
 
 - (void)doNotifyResponse:(NSDictionary *)response {

@@ -8,9 +8,9 @@
 
 #import "ZITOPay.h"
 
-#import "ZITOPayCache.h"
 #import "ZITOPayAdapter.h"
 #import "ZITOPay+Utils.h"
+#import "ZITOPayConfig.h"
 
 @interface ZITOPay ()
 @property (nonatomic, weak) id<ZITOPayDelegate> delegate;
@@ -28,9 +28,10 @@
     return instance;
 }
 
-+ (BOOL)initWithAppID:(NSString *)appId andAppSecret:(NSString *)appSecret {
++ (BOOL)initWithZitoID:(NSString *)zitoId appId:(NSString *)appId andAppSecret:(NSString *)appSecret {
     ZITOPayCache *instance = [ZITOPayCache sharedInstance];
-    if (appId.isValid && appSecret.isValid) {
+    if ([ZITOPay isValid:zitoId] && [ZITOPay isValid:appId] && [ZITOPay isValid:appSecret]) {
+        instance.zitoId = zitoId;
         instance.appId = appId;
         instance.appSecret = appSecret;
         return YES;
@@ -38,8 +39,13 @@
     return NO;
 }
 
-+ (BOOL)initWithAppID:(NSString *)appId andAppSecret:(NSString *)appSecret sandbox:(BOOL)isSandbox {
-    BOOL flag = [ZITOPay initWithAppID:appId andAppSecret:appSecret];
++(BOOL)isValid:(NSString *)str {
+    if (str == nil || (NSNull *)str == [NSNull null] || str.length == 0 ) return NO;
+    return YES;
+}
+
++ (BOOL)initWithZitoID:(NSString *)zitoId appId:(NSString *)appId andAppSecret:(NSString *)appSecret sandbox:(BOOL)isSandbox {
+    BOOL flag = [ZITOPay initWithZitoID:zitoId appId:appId andAppSecret:appSecret];
     if (flag) {
         [ZITOPay setSandboxMode:isSandbox];
     }
@@ -55,7 +61,7 @@
 }
 
 + (BOOL)initWeChatPay:(NSString *)wxAppID {
-    if (!wxAppID.isValid) {
+    if (![ZITOPay isValid:wxAppID]) {
         return NO;
     }
     return [ZITOPayAdapter ZITOPayRegisterWeChat:wxAppID];
@@ -70,17 +76,25 @@
 }
 
 + (BOOL)handleOpenUrl:(NSURL *)url {
-    if (ZITOPayUrlWeChat == [ZITOPayUtil getUrlType:url]) {
+    if (ZITOPayUrlWeChat == [ZITOPay getUrlType:url]) {
         return [ZITOPayAdapter ZITOPay:kAdapterWXPay handleOpenUrl:url];
-    } else if (ZITOPayUrlAlipay == [ZITOPayUtil getUrlType:url]) {
+    } else if (ZITOPayUrlAlipay == [ZITOPay getUrlType:url]) {
         return [ZITOPayAdapter ZITOPay:kAdapterAliPay handleOpenUrl:url];
     }
     return NO;
 }
 
-+ (BOOL)canMakeApplePayments:(NSUInteger)cardType {
-    return [ZITOPayAdapter ZITOPayCanMakeApplePayments:cardType];
++ (ZITOPayUrlType)getUrlType:(NSURL *)url {
+    if ([url.host isEqualToString:@"safepay"])
+        return ZITOPayUrlAlipay;
+    else if ([url.scheme hasPrefix:@"wx"] && [url.host isEqualToString:@"pay"])
+        return ZITOPayUrlWeChat;
+    else
+        return ZITOPayUrlUnknown;
 }
+//+ (BOOL)canMakeApplePayments:(NSUInteger)cardType {
+//    return [ZITOPayAdapter ZITOPayCanMakeApplePayments:cardType];
+//}
 
 + (NSString *)getZITOApiVersion {
     return kApiVersion;
