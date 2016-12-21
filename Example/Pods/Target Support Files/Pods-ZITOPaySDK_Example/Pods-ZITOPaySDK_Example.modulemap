@@ -1,0 +1,6 @@
+framework module Pods_ZITOPaySDK_Example {
+  umbrella header "Pods-ZITOPaySDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

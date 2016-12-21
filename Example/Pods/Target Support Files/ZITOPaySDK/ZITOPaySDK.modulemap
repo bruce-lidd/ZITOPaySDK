@@ -1,0 +1,6 @@
+framework module ZITOPaySDK {
+  umbrella header "ZITOPaySDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
