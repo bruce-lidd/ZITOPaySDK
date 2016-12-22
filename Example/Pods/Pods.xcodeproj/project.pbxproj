@@ -7,37 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0139A091EE7A7A302AB8ACECF009F196 /* ZITOHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CA616D58B5F3F75F89BB5CF092AA8039 /* ZITOHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01F278A54C85C2C865DDAD4090C559B6 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = E8899DDCDB159906296A77EA9F670B8C /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B11B174B2ADC6056A89A3EBE624151D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */; };
 		0E86BBA3A65849769B47995A5E91C881 /* Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BE4E35D0AA9FEFC1DA27890CBA2A19 /* Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F66D78C0969CA6E8EDBD06A95EC2BDE /* NSString+IsValid.m in Sources */ = {isa = PBXBuildFile; fileRef = DD905F1CA556D29D4309F2F9436D1674 /* NSString+IsValid.m */; };
 		1009851D0C0B3FCBC574C414CC4D31B0 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A21F86A69C9F106AA92ADFA3CD7C46C /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102657B70F22B009C38D14BF9BDD4C11 /* Pods-ZITOPaySDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B3D1F4DE49595FF44405F4F7B9F8DA /* Pods-ZITOPaySDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1321E913F5FB476A324AFB57836229B5 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B320B192BAA2B7B006880B016A39AB10 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14021DAC54494207D59FF41E824EB9BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
 		150503B99F77D3D8897EFFC68C09A351 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F5D31437776FFE9BBCAE5FD37C912E /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		16906E924039D8877372856267A16651 /* ZITONetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C787BE892F33D6E5360C8B7F609E3C5 /* ZITONetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19B927D32F66D2EDAF7595A23B2AE692 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F820C46D336F1E6EB733BFC4374C51 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA973BD2D3959FF5FD16D340921D8D5 /* ZITOSandBoxAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFC1375B0CF26DD34270D4C2A33BC86 /* ZITOSandBoxAdapter.m */; };
 		1CD2B9D6C6E8D62471B9972DDA0AFEA4 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B236E34C19DC967CCE978293BCF8C5E /* SPTSpec.m */; };
 		1D676445A1446539D4B722E6EF0C802A /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 924BF15B0F1D99CAD6E46F0030F50C50 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1E53B0571D14535EF03951900B6DFB49 /* Pods-ZITOPaySDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DF41C3E177420661B12F0F833ADAD8 /* Pods-ZITOPaySDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		214F8D721940BD9AA4BAB0E5AE2E8A1C /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D6221AD6AD261B601F9711E749A5D5 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BA7BD8EC17C220A6FB01195838F4E9 /* ZITOPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 550CACE00F90785A918988176C6728A1 /* ZITOPayAdapter.m */; };
+		2407592E1035305FECCCBF31BC66A5EE /* ZITOCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 25BC9ACD383B6913417454F2757A10EA /* ZITOCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		285C6F6BE59E632CB219CD98B4EDC1AA /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B01F350337B25F09061F55C2252CBD6 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		289395CB81D183E704B8F443C3667BA3 /* ZITOURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D8C10C7E0EA4AB70198BB3D809C48 /* ZITOURLSessionManager.m */; };
 		2916D75F69E777954F5BF46AE63C52C0 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF80B5A24CE07B6C736EEF474E7E9C /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E8CA6099D0AECFEB4374088D1A1BDE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		2EC765AC8F39D6604FF514F71B5F8AC7 /* ZITOBaseReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6BCC83B850DA453886BD51B2D6E782 /* ZITOBaseReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3072FD6BEB5788A0DCDAD465DB887D7E /* ZITOPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8BB63221597AF04F58F0B4BD00AEA1 /* ZITOPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32010CF9FD272BBA6D4D93938CA6FD33 /* ZITONetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ACE223F1453FF29A259C9860A4286B /* ZITONetworkReachabilityManager.m */; };
+		32E336BB67CC2CE22E9978006B79EA4C /* ZITOURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1522D115416563154B1D1CBF44D2D427 /* ZITOURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33078A7775C8CD7CC4D76BC4DBECFB4E /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCE1E6823C0AC6058E1F677318C1D0F /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3332914C125782E8595196791C291EDE /* ZITOPayRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6283B7C6A8D355328CA697D0E749373C /* ZITOPayRequest.m */; };
 		361B58CE2A28E03CA83A73617ED739F2 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = A125E7E80B5C2A367F184455B08495B1 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		39461DAB3DE2637F4AE2BA94F19DCF2B /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5EBB318D16AE6EC1958DC8510C228D /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B4B7ABF2C3D19B286CA1943A525B1BD /* ZITOPayAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A6777F75771111BF30818F9F6EB4D5 /* ZITOPayAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D1C615E741E95E2199E36C47AFE618A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		3E6A05DE703C99458B7ACD46DB342A18 /* ZITOPayCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5797F95DB7435E4E5595C61DB4714EBF /* ZITOPayCache.m */; };
+		3F0AF8AC54956CFAB94EA663075A0786 /* ZITOPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A04D45321D3E65669CC760A0584D3529 /* ZITOPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F17F322F466265666D5FB597FFA8CE7 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF01BA5773CAF9B2F6768A5AEB29504 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FA2E877AC9A3F1F83B4EB936EFC9935 /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8BC2C6730675F74DD28A442535501 /* SPTCompiledExample.m */; };
+		4134B4394BECA5EDF5571B7F1B5E2752 /* ZITOPayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = F00AF0AD9B339CAD8EC128A1C91B50CB /* ZITOPayResp.m */; };
 		41CC214541946B82A25CE427BB81ABEA /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 186D37D789BDC5806713AC08D0BD0452 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		425C4DFD1FAB011D70F825631144BC4C /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF30858E3C4F8F822AB008755EC09E9 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		443AEEB215CBB31C1D8588CB931C1057 /* ZITOBaseReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03684A11E659725A087877AA10EC0D /* ZITOBaseReq.m */; };
 		47D171E32EAE4FB61A9971B9BC00226D /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 983F42157C09B24C95033E6A987BBF22 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4861F2FFD5A4306E7B7BD3CD0D8199AC /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6DF8F89EC26F944197244B9F2AAB15 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CA4F8F64565882DCFA174872749C0EF /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B271C769948413B2D6A2FA5FA661F5 /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F3C7C716A4211E63DB249F24E7A1D5F /* ZITOURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D943DBCC0A6A678851336283AB1C2B9B /* ZITOURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		508B6D0572C0C3B4A3E019B814595D4A /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = ED05564542683A1E240E5097EC7B86DC /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51A5BC64AE88FB25968A656FB0538303 /* ZITOPay+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F8449014C1B05391FF3FC73ADF37DF /* ZITOPay+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51FCC9EDD6B60BF63B5EF7CAC94CCF23 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F770E0A0B3B0D2789D92A52AD3ABAE /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5205485E6199A53A1919ADAA74DA0552 /* ZITOURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EBEADDEC2CB0A84D5DD2BCBDBDAF5 /* ZITOURLRequestSerialization.m */; };
 		5922E3B61E351E2A21095BD92E4FE8AC /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB33EA3C18646B1DA6384B7C356C458 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		597E5A323FD0306B81C3F7E9C8E5580D /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BB29C27B61C055294A8316529A8EF8 /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CFB29413E11F9931BD529877240D49A /* ZITOPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 141424D5576DB0C2CB5F1E501D1E9469 /* ZITOPay.m */; };
 		5D4700451D6C9DFC6D5FFB86671EA2AC /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D742C36417083F91C50620C170817D1 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E4F55D319FF771D658CCE335E7CB498 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4CBA4D2825ED03DE841CB750862190 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5EC35291D9DE7FB69C9DF201B7DEAC77 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8130E2C24D57D446CB02B745DEBFDB68 /* SPTExample.m */; };
@@ -46,24 +67,32 @@
 		60CD83FA1B2BF6E93B59834C1E0CBEF0 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE369528DB94DD9FD6880DCFAAAAB69 /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		620438E11B8D5BBB77D34B938CA79925 /* Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EC781C67B94698BC0FD79F6926656 /* Specta-dummy.m */; };
 		62566B830085543D415E4F6DBA4A868F /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 113855CF66A69F6876546E978AC2362E /* SPTTestSuite.m */; };
+		6365835702B9849DDD7BB4B51184CE0E /* ZITOURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 388CD9870BD3334F3B31330ACAC7BAFC /* ZITOURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64C46AF200F2347115A0DF2799D6E403 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A19FC30FAE97EDA655018A6AD2D54F /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		673D3BA74AEF72D6A803C6AF903BA30A /* NSString+IsValid.h in Headers */ = {isa = PBXBuildFile; fileRef = FB83D610682474D3C08CFDC7E7C18978 /* NSString+IsValid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70415E84247069578AA3A39EE1A03FB2 /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3CD05CED877C5E19CB18BA095BC724 /* SPTSharedExampleGroups.m */; };
 		716652F99933989CF46307B75EC84AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		743CB35C7FE871ED727E5BFF7C249A8E /* ZITOPayConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0E8A8F8DA60C2937A0386F8BB331CE /* ZITOPayConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75D95170707F1D0161DDDC0908A4FCC6 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C1DD363D5966F42C4D802641B4CEEA /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		778C9F1A1715E05313578E39AB46726E /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5966F05CD1198629BF447653497239 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7E81176499F06E523CE3039B08AB5051 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BBEA8D0E2B46A33A73346032F24AAA /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80C76B538327F9C700158B8D235C124C /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 8002AEC214B6BB97F584715F86C953D0 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8220368E5F7EA70947BAD2B6F216C61B /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = E156AF9341293266845AA8774ED518EA /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8420CDA7FF939F6BC46CE61747C0CF41 /* ZITOPayRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E885A3D5476E51938866DC572B924F63 /* ZITOPayRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		870CAAA15357EFF9E1619737DEE56067 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC92BECE41FDD487136814173CB1558 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8732841E77626478BE215E2608760C39 /* ZITOPayReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 614636A8F985C55F2D3A2465E7E73814 /* ZITOPayReq.m */; };
 		87AE70A44BD8E8676B2A3EDB6E334138 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 177EE8E7DD8C4226F8E15FE4C447154D /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B0A34DADDB56E70CF4A5177E65AA081 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AF080460DC05A5A144E6CAC1177FB0AC /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B8C4B3E28E6FC6D26037EFC282BE4C5 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9A1402E8720FD00C46040083DC9692 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF9E422A6C6B9B4522BADEB4AAF6AA6 /* PaySandBoxViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B906896D8456EE4AD0456E18BEA3156 /* PaySandBoxViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C14546CF091E0A5B1F0F37F576990B8 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 79476B660CA0150E072A597FD1928591 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F990515E868D90C15D2148DD1A22403 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E20292CF7B63EA8E98399EF2352F73D /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9402C2F8CDD660847C26C36D1496D153 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3298EBD0347754FB799E7630BC98ABA3 /* ReplaceMe.m */; };
 		98571BE17A46245CA1717CF9157A0807 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 408EA78FA928332DAE21B1527BCC7A2F /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		986BACA03AD4A413396A52883105D402 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = A86483E009A2C30E3472D0609B2DBFFB /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99E6D51A8A4E3FFB7601D182D995A3BA /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4D33F041C8104408EC5CD85F30D247 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9A0ADF06F5B6BC3A70EDE1285BAF9346 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4506716AF52468B3550AD5824670F /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B22E8CD01BDC94DCD2809B9B9F5771E /* ZITOHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B238A037E14984C1A7F8B57ADA815ADC /* ZITOHTTPSessionManager.m */; };
 		9CAFC7DAE2E661FC92393E5CC55D1D61 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFD77F6B582228E3C05EB3F700225A9 /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E4463D68D13C127762B1ACB8249B64C /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F67D8E8E16F0E77A2D4E5F714CEBC41 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9EA076D25036A0F4765FF3FB57CF4A6A /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 31695F545CD3669506497ADBB22873F6 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -80,15 +109,22 @@
 		AA5060419F1307F5F03ECBEA70DB186C /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = C849D7BC23725EC2DCDC9EB803322052 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB35BA25FF6F0DCAFD8616EEEEE1EA6A /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = D61BC75AB795DFB7AE9CF80D79C1B530 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABBDD0372C687211E68EDCE0166F3632 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B424E5B08CAAABE851C235789EE3EC6B /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABFCD09515D460B9BAFBAEA8B8B914A2 /* ZITONetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A045DC3B0A674F487700271A3E46DBE /* ZITONetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC0AB78F3A7629ED1C7F3F82BBB3F471 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06F4EDF054A24295A7BD524587CABC /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AC80D53C9C975823AD525BA47A902F32 /* ZITOURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B75849ADDBFA4A1A73EF97C3B828DED6 /* ZITOURLResponseSerialization.m */; };
+		AD9A469CB0542433D960C2B081E025A4 /* NSDictionary+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = A843181D6D246F2A459955D7924B57D8 /* NSDictionary+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE17B29E36A4861DE7C9F572379C9962 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D5F98443188468F5CFE556EC251738 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE7BBD46BA00A9AC69249ADA56402162 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EE1FA2E988E166397F7C5FFFBEBB6 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B1487AC2DD502CCE46631C123E047D28 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E711193023B1623B4622AA72E1B5DB2 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B307ABE6C2F5D95A26BD6AD8B1C70071 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 04BBCCE13322F42620459D20E8DE3673 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B33CBEB43D5A85BD7926873C6943F398 /* ZITOBaseResp.m in Sources */ = {isa = PBXBuildFile; fileRef = A82D6AB8E8F824C3AC29636ACF26116A /* ZITOBaseResp.m */; };
 		B3F189747A7A3CEDA9200CB2749AC7D8 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DA28E34D6B2634B0D3632970B9AFD0 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7FB4938CAEEA92FEF8BE3E3AB41BD2C /* ZITOPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A04D45321D3E65669CC760A0584D3529 /* ZITOPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B484C4CD74D5E22E7AE44204B34E2CDF /* ZITOSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D28C4560C5E94F55D3259AB07530C /* ZITOSecurityPolicy.m */; };
+		B74080D7CD7061AB41963CAAF4627488 /* ZITOPayAdapterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CEECFA5BADEFD4BA5C3FE36B6B3A4A54 /* ZITOPayAdapterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B80154D98BAB9C29CC7EA6AC88876CFF /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = E4286F5B187014B00F18766782F7018D /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8C51CA7A30782FB8FCED9E5F23FBAF0 /* ZITOPayReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 74422D6C99DAB044120BFDE9D121D272 /* ZITOPayReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B98277FDD5308346D22E50A4D2DD0F00 /* Pods-ZITOPaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07764CA39457E9F2420228E6C12C2710 /* Pods-ZITOPaySDK_Example-dummy.m */; };
+		BA3922D4A3C0FD683E52284ED592A4A2 /* ZITOSandBoxAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 33BF7DF89017BD267AD6268C32E205D4 /* ZITOSandBoxAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB22157A1FCDBF45EBF42CD0B491BFC4 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A1FE2006A967BE06886C450214BDFE /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBC7D292529B7E5DB953171190E321AF /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 592E81109E597E27A3D9DBB86ABBE590 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC530A8234C398F9F3AD1A1D41670B65 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC48829A0EB26D4DD51CD2AA4B0FE74 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -97,31 +133,40 @@
 		BFC7D32CFE8200730837306AFF61E5AD /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F32E405A85135EDBCBF4765A6BB530B /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C08C94B10A99B2F917CDC38CD6C2F23B /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE29471E8953384B36B17DC33FB8C75 /* XCTestCase+Specta.m */; };
 		C14CD98EE4DDC0B7689F058D5B79CC47 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF861D2ADFE89409C39B6E076059DCE /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C26CA2C0D976DCF9ED233E2777495483 /* ZITOPay+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3A2E44495A54272ECA8B968ABBD69 /* ZITOPay+Utils.m */; };
 		C676818DADAC76EE2FDC5533CBF3648A /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = F3841AF1D8E631E333341008419AF1A1 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C72C4890ACF806E5807ACE952CB887EB /* ZITOPayResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 647C265592111CDFD9CA1410F08C7FFD /* ZITOPayResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8FD783DE8C862295345563272711447 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF67CD313329AC05B39AE251B5EA5BB /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9316889C6FA1366F9839DC130F78927 /* Pods-ZITOPaySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE15FCC51D4F258950761F4D5AF0885 /* Pods-ZITOPaySDK_Tests-dummy.m */; };
 		CB99A2D7D003745153A564346DF8ABA8 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5CF0D3894D4FC1B84CF0F527D0D766 /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC7B3E61E7F02C930D6074E7FCDB35A2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 50435C5BC36C495B38B92AAF62DB6BBA /* ReplaceMe.m */; };
 		CD22121B77F0F8E2B6A58AF6226038C2 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 279DF95762E948BE7B719A7F673E9E56 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CD66900813CFE317343F5A4053AE73EC /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B613869003A3D21F03ECEADC589822 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE7E4C141657D23213C7FAE616D7FA75 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E90BF1DB04C094A5015446308F5C85 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF188380D890D4A7F10F280249F572DF /* ZITOPayObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5D16DA6BA44E04EB5A486C3495A2B2 /* ZITOPayObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1768C977F0CD5B420D1A1D2375CDBD4 /* Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A245D75F8D2D0FFAD5230F5925974 /* Expecta-dummy.m */; };
 		D5D564A96B9BDD61DA8802268D481329 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CF3903D943792CF71D2E59A5FE6602 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D92F37204D96636C08E0BC5C48C018B6 /* ZITOPayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6AB6132674135C3CF2E2E68BECB981 /* ZITOPayUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB8F3665E9E382DF52E0DCB4DECE5EAE /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF2564A5B3BCF5B727F63C626FF9935 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC2547D7C4FF608B8A9AF930BCC8AF9C /* Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2ABBE8261195A55ED1DFF9A59897512 /* Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC423A980C991970F4D637AC4C47D863 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B5A923D27207113E5B55FE0DACDAD9 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8E5E93B83353C1BD9954C13422BEFD /* ZITOPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDA4BEA31F6BFB29AE967553F0EEE2 /* ZITOPaySDK-dummy.m */; };
 		DED9AE33B24B462D4B44FE94383B35F4 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 82018E76DBBAA11465301FB7614DA196 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF883524C3F35145D74166C01BCFCFC3 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CC760F73E42A321D6401C619837229 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E233F5CF4BF16CFB539804C4E995C355 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EC02837F7465B7AED8E1A256D57C91 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3355DB3F63F6FE79FD8DD6188B0B3A4 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = AE94674608619558EA8DCEBE8902C148 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E61E28B50602F353D95914765667969F /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 27576C638FD3AB691E7F4FB1E3980464 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E66F046F0D19CA855B525CC32228A6E7 /* ZITOPayCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B1B37A24BF38D3D93F0D93ABAC0C64 /* ZITOPayCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6D59CAA2A6E134A4643254406ED11F2 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = A1000A875D63BCF2E590201DB9EE9499 /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EE561A7F4BFE1F0CB414BBE22B8A658F /* ZITOSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CD4729A43606F71BD854DBBECA7391 /* ZITOSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE96EC216F4F284FB0EE7F86040AA3F1 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D23EA9CCB1E421678FACAC3D02921A8 /* SPTCallSite.m */; };
-		F5ED9CC64A1BD6B528117F9EA406E6FC /* ZITOPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDA4BEA31F6BFB29AE967553F0EEE2 /* ZITOPaySDK-dummy.m */; };
+		EE97472E32144D631C6DB625CBA9B532 /* PaySandBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E8D47B9FAC40D44132E62F8EC5D4A /* PaySandBoxViewController.m */; };
 		F74F0174B426B7EAB501A3788E5D381F /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67324AA26715C0742B62E59D0AAB374C /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB0A8D657C3C69AD818961B51E3BEEF1 /* ZITOPayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1282127527F0D9A8279599D4A9E44EEE /* ZITOPayUtil.m */; };
+		FB77D7E504B3C833122004749D398E48 /* ZITOBaseResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A15B1E07E7826CBF0FDCA6CEF2D9FE /* ZITOBaseResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC223395BCEE46EB920CECD38AFD4402 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2D86876643D2803FBF58BD3C0BE625 /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC6474103AA989EBD5368772037BE0BB /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 847A5C6956B4E31C6C348C18D4FDBEEA /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD39ACDEA6F0B6D6DBB730547CE18BA6 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 67473F09A0FADF52D476EA88F48CFA54 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7186AC2552A392A2891C2F7A3AB49B /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 15539F547A2E2513CC178361437C26A0 /* NSDictionary+Utils.m */; };
 		FF394D6FEA84206182301180AE4CB957 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D17A7188630D4CFFDF216D1B20AD98 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -156,21 +201,28 @@
 		06C1DD363D5966F42C4D802641B4CEEA /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
 		071C2E6B18B48E441760FA179002486F /* Pods_ZITOPaySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZITOPaySDK_Tests.framework; path = "Pods-ZITOPaySDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07764CA39457E9F2420228E6C12C2710 /* Pods-ZITOPaySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZITOPaySDK_Example-dummy.m"; sourceTree = "<group>"; };
+		0A6EBEADDEC2CB0A84D5DD2BCBDBDAF5 /* ZITOURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOURLRequestSerialization.m; sourceTree = "<group>"; };
 		0D742C36417083F91C50620C170817D1 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
 		0FCDA4BEA31F6BFB29AE967553F0EEE2 /* ZITOPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZITOPaySDK-dummy.m"; sourceTree = "<group>"; };
 		113855CF66A69F6876546E978AC2362E /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
 		124408F448490BCF39CC1C2AA5297197 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		1282127527F0D9A8279599D4A9E44EEE /* ZITOPayUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPayUtil.m; sourceTree = "<group>"; };
+		141424D5576DB0C2CB5F1E501D1E9469 /* ZITOPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPay.m; sourceTree = "<group>"; };
+		1522D115416563154B1D1CBF44D2D427 /* ZITOURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOURLResponseSerialization.h; sourceTree = "<group>"; };
+		15539F547A2E2513CC178361437C26A0 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
 		177EE8E7DD8C4226F8E15FE4C447154D /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
 		17B271C769948413B2D6A2FA5FA661F5 /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
 		182A360281F149B5A5092AF5390EDF24 /* Pods-ZITOPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZITOPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		186D37D789BDC5806713AC08D0BD0452 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
 		19DFC3F16DD6DED3B954319D89EDEDDE /* Pods-ZITOPaySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZITOPaySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A045DC3B0A674F487700271A3E46DBE /* ZITONetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITONetworkReachabilityManager.h; sourceTree = "<group>"; };
 		1B06F4EDF054A24295A7BD524587CABC /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
 		1DF8BC2C6730675F74DD28A442535501 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
 		1F5CF0D3894D4FC1B84CF0F527D0D766 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
 		1F9EE98E21A0C637A4E0FE3B6F402DAD /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
 		209EF4ACF22C9E608DB08B4545663A9D /* ZITOPaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZITOPaySDK.modulemap; sourceTree = "<group>"; };
 		2499EDF4CE48DC7D295875D373CE6ACB /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		25BC9ACD383B6913417454F2757A10EA /* ZITOCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOCategory.h; sourceTree = "<group>"; };
 		27576C638FD3AB691E7F4FB1E3980464 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
 		279DF95762E948BE7B719A7F673E9E56 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
 		2876AA0C28A65CB705492BD003FEAD14 /* Pods-ZITOPaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZITOPaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,24 +232,38 @@
 		2C494029476D3C855A40A4F3A5A1E992 /* Pods-ZITOPaySDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZITOPaySDK_Tests-resources.sh"; sourceTree = "<group>"; };
 		2CF861D2ADFE89409C39B6E076059DCE /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
 		2DB5DCC00D30AD3F8435E60FB579DA59 /* Pods-ZITOPaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZITOPaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E6AB6132674135C3CF2E2E68BECB981 /* ZITOPayUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayUtil.h; sourceTree = "<group>"; };
 		31695F545CD3669506497ADBB22873F6 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		3298EBD0347754FB799E7630BC98ABA3 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33BF7DF89017BD267AD6268C32E205D4 /* ZITOSandBoxAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOSandBoxAdapter.h; sourceTree = "<group>"; };
 		33C929F06DEC760FA0B134E8F8D1C9FA /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		36B1B37A24BF38D3D93F0D93ABAC0C64 /* ZITOPayCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayCache.h; sourceTree = "<group>"; };
 		36BB29C27B61C055294A8316529A8EF8 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		388CD9870BD3334F3B31330ACAC7BAFC /* ZITOURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOURLRequestSerialization.h; sourceTree = "<group>"; };
+		38A15B1E07E7826CBF0FDCA6CEF2D9FE /* ZITOBaseResp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOBaseResp.h; sourceTree = "<group>"; };
 		38DF41C3E177420661B12F0F833ADAD8 /* Pods-ZITOPaySDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZITOPaySDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		393405584126BC701B16CB695FBEC1B0 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		39F8449014C1B05391FF3FC73ADF37DF /* ZITOPay+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZITOPay+Utils.h"; sourceTree = "<group>"; };
 		3ACF80B5A24CE07B6C736EEF474E7E9C /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
 		3B236E34C19DC967CCE978293BCF8C5E /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
 		3B6DF8F89EC26F944197244B9F2AAB15 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		3C03684A11E659725A087877AA10EC0D /* ZITOBaseReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOBaseReq.m; sourceTree = "<group>"; };
 		3F32E405A85135EDBCBF4765A6BB530B /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
 		408EA78FA928332DAE21B1527BCC7A2F /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
 		42EC02837F7465B7AED8E1A256D57C91 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		4A6D8C10C7E0EA4AB70198BB3D809C48 /* ZITOURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOURLSessionManager.m; sourceTree = "<group>"; };
+		4B906896D8456EE4AD0456E18BEA3156 /* PaySandBoxViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PaySandBoxViewController.h; sourceTree = "<group>"; };
 		4EE15FCC51D4F258950761F4D5AF0885 /* Pods-ZITOPaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZITOPaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		4F5D16DA6BA44E04EB5A486C3495A2B2 /* ZITOPayObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayObjects.h; sourceTree = "<group>"; };
 		4F67D8E8E16F0E77A2D4E5F714CEBC41 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
-		50435C5BC36C495B38B92AAF62DB6BBA /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		50C3A2E44495A54272ECA8B968ABBD69 /* ZITOPay+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZITOPay+Utils.m"; sourceTree = "<group>"; };
 		51F770E0A0B3B0D2789D92A52AD3ABAE /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
 		51F8C648CB722FE51238487FAECC1517 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		525D28C4560C5E94F55D3259AB07530C /* ZITOSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOSecurityPolicy.m; sourceTree = "<group>"; };
 		54371815367C40EDB52FBDB27B2DBA70 /* Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta-prefix.pch"; sourceTree = "<group>"; };
+		550CACE00F90785A918988176C6728A1 /* ZITOPayAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPayAdapter.m; sourceTree = "<group>"; };
+		5797F95DB7435E4E5595C61DB4714EBF /* ZITOPayCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPayCache.m; sourceTree = "<group>"; };
 		592E81109E597E27A3D9DBB86ABBE590 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		5B01F350337B25F09061F55C2252CBD6 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
 		5BC48829A0EB26D4DD51CD2AA4B0FE74 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
@@ -205,14 +271,21 @@
 		5D431759C2312628BAF106B8D2CC8DB2 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
 		5E20292CF7B63EA8E98399EF2352F73D /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
 		5E711193023B1623B4622AA72E1B5DB2 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		5F6BCC83B850DA453886BD51B2D6E782 /* ZITOBaseReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOBaseReq.h; sourceTree = "<group>"; };
+		614636A8F985C55F2D3A2465E7E73814 /* ZITOPayReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPayReq.m; sourceTree = "<group>"; };
 		621D45D57ACA8E38D852A1E07D2AD679 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		6283B7C6A8D355328CA697D0E749373C /* ZITOPayRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPayRequest.m; sourceTree = "<group>"; };
 		63C61A267EEDAF9BD4C260D859CF8E98 /* Pods-ZITOPaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZITOPaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		647C265592111CDFD9CA1410F08C7FFD /* ZITOPayResp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayResp.h; sourceTree = "<group>"; };
 		65DA28E34D6B2634B0D3632970B9AFD0 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		66ACE223F1453FF29A259C9860A4286B /* ZITONetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITONetworkReachabilityManager.m; sourceTree = "<group>"; };
 		67324AA26715C0742B62E59D0AAB374C /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
 		67473F09A0FADF52D476EA88F48CFA54 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
 		68F820C46D336F1E6EB733BFC4374C51 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
 		6A6EDD19799CB5B65AEBEFEE57A9C2E7 /* Pods-ZITOPaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZITOPaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C787BE892F33D6E5360C8B7F609E3C5 /* ZITONetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITONetworking.h; sourceTree = "<group>"; };
 		704CDA1E2D73288DAC9C4FDBA881844E /* Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-prefix.pch"; sourceTree = "<group>"; };
+		74422D6C99DAB044120BFDE9D121D272 /* ZITOPayReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayReq.h; sourceTree = "<group>"; };
 		749902909D057AC8D1CA77B156797196 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		764729659D0B9D34EF92EC22F8DB50D3 /* ZITOPaySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZITOPaySDK.xcconfig; sourceTree = "<group>"; };
 		7687931B86D55C2A3B7570964EEFDEAB /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
@@ -228,6 +301,7 @@
 		847A5C6956B4E31C6C348C18D4FDBEEA /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
 		87A19FC30FAE97EDA655018A6AD2D54F /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
 		8BE369528DB94DD9FD6880DCFAAAAB69 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		8F9E8D47B9FAC40D44132E62F8EC5D4A /* PaySandBoxViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PaySandBoxViewController.m; sourceTree = "<group>"; };
 		8FF67CD313329AC05B39AE251B5EA5BB /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
 		91D17A7188630D4CFFDF216D1B20AD98 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
 		924BF15B0F1D99CAD6E46F0030F50C50 /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
@@ -237,7 +311,9 @@
 		9481427DF2902DFFCDC09936E3C52C6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		983F42157C09B24C95033E6A987BBF22 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
 		998914C0B5A68C9A01E1596E02564482 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8BB63221597AF04F58F0B4BD00AEA1 /* ZITOPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPay.h; sourceTree = "<group>"; };
 		9EF2564A5B3BCF5B727F63C626FF9935 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		9EFC1375B0CF26DD34270D4C2A33BC86 /* ZITOSandBoxAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOSandBoxAdapter.m; sourceTree = "<group>"; };
 		A04D45321D3E65669CC760A0584D3529 /* ZITOPaySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZITOPaySDK-umbrella.h"; sourceTree = "<group>"; };
 		A0E90BF1DB04C094A5015446308F5C85 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
 		A1000A875D63BCF2E590201DB9EE9499 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
@@ -246,6 +322,8 @@
 		A2ABBE8261195A55ED1DFF9A59897512 /* Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Specta-umbrella.h"; sourceTree = "<group>"; };
 		A31DB2F213B606BBB124F2A6D10D8417 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
 		A452D11E2027A4ADA3CCC7007F978A33 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Specta.framework; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82D6AB8E8F824C3AC29636ACF26116A /* ZITOBaseResp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOBaseResp.m; sourceTree = "<group>"; };
+		A843181D6D246F2A459955D7924B57D8 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
 		A86483E009A2C30E3472D0609B2DBFFB /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
 		AA2364F990290F821A2CB900471FBE2A /* Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Specta.modulemap; sourceTree = "<group>"; };
 		AA2D86876643D2803FBF58BD3C0BE625 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
@@ -260,25 +338,32 @@
 		B13A8BD95C83CF64EE9A5CD3290B44E7 /* ZITOPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZITOPaySDK.framework; path = ZITOPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B174ECCB055189C835E1613FD300BB85 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		B1A8005D3FE4A835937354CEF270B779 /* ZITOPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZITOPaySDK-prefix.pch"; sourceTree = "<group>"; };
+		B238A037E14984C1A7F8B57ADA815ADC /* ZITOHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOHTTPSessionManager.m; sourceTree = "<group>"; };
 		B320B192BAA2B7B006880B016A39AB10 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		B3BBEA8D0E2B46A33A73346032F24AAA /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
 		B424E5B08CAAABE851C235789EE3EC6B /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		B75849ADDBFA4A1A73EF97C3B828DED6 /* ZITOURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOURLResponseSerialization.m; sourceTree = "<group>"; };
 		BF3CD05CED877C5E19CB18BA095BC724 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
 		C0420BD68EF14CF918B80CF6BEFD7E11 /* Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Expecta.xcconfig; sourceTree = "<group>"; };
 		C2D5F98443188468F5CFE556EC251738 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
 		C7A1FE2006A967BE06886C450214BDFE /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
 		C7B5A923D27207113E5B55FE0DACDAD9 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
 		C849D7BC23725EC2DCDC9EB803322052 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		CA616D58B5F3F75F89BB5CF092AA8039 /* ZITOHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOHTTPSessionManager.h; sourceTree = "<group>"; };
 		CDC92BECE41FDD487136814173CB1558 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
 		CDCE1E6823C0AC6058E1F677318C1D0F /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
 		CE1D24AEF580FEBC64B32415DF911121 /* Pods-ZITOPaySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZITOPaySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEECFA5BADEFD4BA5C3FE36B6B3A4A54 /* ZITOPayAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayAdapterProtocol.h; sourceTree = "<group>"; };
 		CFF5501A713B1786EB185D0F4BE3467E /* Pods_ZITOPaySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZITOPaySDK_Example.framework; path = "Pods-ZITOPaySDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61BC75AB795DFB7AE9CF80D79C1B530 /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
 		D6BE4E35D0AA9FEFC1DA27890CBA2A19 /* Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta-umbrella.h"; sourceTree = "<group>"; };
 		D6CF3903D943792CF71D2E59A5FE6602 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		D943DBCC0A6A678851336283AB1C2B9B /* ZITOURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOURLSessionManager.h; sourceTree = "<group>"; };
 		DA5EBB318D16AE6EC1958DC8510C228D /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
 		DAACC7B2EAAA76EAB129F3A5D74DDC18 /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
 		DC4CBA4D2825ED03DE841CB750862190 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		DD0E8A8F8DA60C2937A0386F8BB331CE /* ZITOPayConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayConfig.h; sourceTree = "<group>"; };
+		DD905F1CA556D29D4309F2F9436D1674 /* NSString+IsValid.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+IsValid.m"; sourceTree = "<group>"; };
 		DEB33EA3C18646B1DA6384B7C356C458 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
 		DF4D33F041C8104408EC5CD85F30D247 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		DF5966F05CD1198629BF447653497239 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
@@ -288,11 +373,16 @@
 		E5223BDB7FADF596A2F2E9D991A23BFC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64EE1FA2E988E166397F7C5FFFBEBB6 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
 		E73802D0AE4510E66F6D184407961E19 /* Pods-ZITOPaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZITOPaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E885A3D5476E51938866DC572B924F63 /* ZITOPayRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayRequest.h; sourceTree = "<group>"; };
 		E8899DDCDB159906296A77EA9F670B8C /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
 		E8CC760F73E42A321D6401C619837229 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		E8CD4729A43606F71BD854DBBECA7391 /* ZITOSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOSecurityPolicy.h; sourceTree = "<group>"; };
 		EA5303EB11622EDB57219024BC9DABDB /* Pods-ZITOPaySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZITOPaySDK_Example.modulemap"; sourceTree = "<group>"; };
 		ED05564542683A1E240E5097EC7B86DC /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		F00AF0AD9B339CAD8EC128A1C91B50CB /* ZITOPayResp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZITOPayResp.m; sourceTree = "<group>"; };
 		F3841AF1D8E631E333341008419AF1A1 /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		F3A6777F75771111BF30818F9F6EB4D5 /* ZITOPayAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZITOPayAdapter.h; sourceTree = "<group>"; };
+		FB83D610682474D3C08CFDC7E7C18978 /* NSString+IsValid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+IsValid.h"; sourceTree = "<group>"; };
 		FBF30858E3C4F8F822AB008755EC09E9 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
 		FD3A245D75F8D2D0FFAD5230F5925974 /* Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,7 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				5764C0AE896334CA73CB20410FB1B870 /* Support Files */,
-				7127AAC3E77391AADCE7227D171D4041 /* ZITOPaySDK */,
+				8FA70157BC619F68CCDD9012070EBABB /* ZITOPaySDK */,
 			);
 			name = ZITOPaySDK;
 			path = ../..;
@@ -393,6 +483,26 @@
 			);
 			name = Specta;
 			path = Specta;
+			sourceTree = "<group>";
+		};
+		20A375118F44E5A21AF494DD12A54C33 /* ZITOSandBoxAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				33BF7DF89017BD267AD6268C32E205D4 /* ZITOSandBoxAdapter.h */,
+				9EFC1375B0CF26DD34270D4C2A33BC86 /* ZITOSandBoxAdapter.m */,
+			);
+			name = ZITOSandBoxAdapter;
+			path = ZITOSandBoxAdapter;
+			sourceTree = "<group>";
+		};
+		226C9308C0A03B6CB0706A99B59EB9CF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3298EBD0347754FB799E7630BC98ABA3 /* ReplaceMe.m */,
+				8AA5FE09794DBDCAAFBBEFFCC6C0FDED /* ZITOPAYSDK */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -447,15 +557,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ZITOPaySDK";
-			sourceTree = "<group>";
-		};
-		594F76114FBC27BC9BE6F58F64B29B87 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				50435C5BC36C495B38B92AAF62DB6BBA /* ReplaceMe.m */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		642CBADE05AB7AED541CB2A072F3023A /* Expecta */ = {
@@ -540,13 +641,14 @@
 			path = Expecta;
 			sourceTree = "<group>";
 		};
-		7127AAC3E77391AADCE7227D171D4041 /* ZITOPaySDK */ = {
+		6EA9DF723B7D8FB80970E32FEEEFDDB9 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				594F76114FBC27BC9BE6F58F64B29B87 /* Classes */,
+				E885A3D5476E51938866DC572B924F63 /* ZITOPayRequest.h */,
+				6283B7C6A8D355328CA697D0E749373C /* ZITOPayRequest.m */,
 			);
-			name = ZITOPaySDK;
-			path = ZITOPaySDK;
+			name = Request;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -568,6 +670,19 @@
 				1088FF28BA9FACD5476F3304D0FEA7E9 /* Specta */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8AA5FE09794DBDCAAFBBEFFCC6C0FDED /* ZITOPAYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9A8BB63221597AF04F58F0B4BD00AEA1 /* ZITOPay.h */,
+				141424D5576DB0C2CB5F1E501D1E9469 /* ZITOPay.m */,
+				CEECFA5BADEFD4BA5C3FE36B6B3A4A54 /* ZITOPayAdapterProtocol.h */,
+				4F5D16DA6BA44E04EB5A486C3495A2B2 /* ZITOPayObjects.h */,
+				F9ADD1068A91B1B7D8B9E328B65756F7 /* ZITOPay */,
+			);
+			name = ZITOPAYSDK;
+			path = ZITOPAYSDK;
 			sourceTree = "<group>";
 		};
 		8B13E7675CDFD3E42F7D76EFC061BDE1 /* Support Files */ = {
@@ -596,6 +711,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8FA70157BC619F68CCDD9012070EBABB /* ZITOPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				226C9308C0A03B6CB0706A99B59EB9CF /* Classes */,
+			);
+			name = ZITOPaySDK;
+			path = ZITOPaySDK;
+			sourceTree = "<group>";
+		};
+		9B86AD0F62D69CDD35729165FBBA0AB6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AF2449D7A8337F2406716E298F9D4B6B /* ZITOBase */,
+				E70C4E3B0F8AD11E9A82610D994AD90F /* ZITOPayBase */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		9D9CFF97A2D41D7CB20A427D5386C7A6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,6 +739,39 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		AF2449D7A8337F2406716E298F9D4B6B /* ZITOBase */ = {
+			isa = PBXGroup;
+			children = (
+				5F6BCC83B850DA453886BD51B2D6E782 /* ZITOBaseReq.h */,
+				3C03684A11E659725A087877AA10EC0D /* ZITOBaseReq.m */,
+				38A15B1E07E7826CBF0FDCA6CEF2D9FE /* ZITOBaseResp.h */,
+				A82D6AB8E8F824C3AC29636ACF26116A /* ZITOBaseResp.m */,
+			);
+			name = ZITOBase;
+			path = ZITOBase;
+			sourceTree = "<group>";
+		};
+		BCFDB7A8E5414C6DD7CCE559882065FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A843181D6D246F2A459955D7924B57D8 /* NSDictionary+Utils.h */,
+				15539F547A2E2513CC178361437C26A0 /* NSDictionary+Utils.m */,
+				FB83D610682474D3C08CFDC7E7C18978 /* NSString+IsValid.h */,
+				DD905F1CA556D29D4309F2F9436D1674 /* NSString+IsValid.m */,
+				25BC9ACD383B6913417454F2757A10EA /* ZITOCategory.h */,
+				39F8449014C1B05391FF3FC73ADF37DF /* ZITOPay+Utils.h */,
+				50C3A2E44495A54272ECA8B968ABBD69 /* ZITOPay+Utils.m */,
+				36B1B37A24BF38D3D93F0D93ABAC0C64 /* ZITOPayCache.h */,
+				5797F95DB7435E4E5595C61DB4714EBF /* ZITOPayCache.m */,
+				DD0E8A8F8DA60C2937A0386F8BB331CE /* ZITOPayConfig.h */,
+				2E6AB6132674135C3CF2E2E68BECB981 /* ZITOPayUtil.h */,
+				1282127527F0D9A8279599D4A9E44EEE /* ZITOPayUtil.m */,
+				F65EF8BA2C6BC56F6AF3C7B4A6A1219A /* ZITONetworking */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C04912AC248FB197DE437928FA4D593C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,6 +779,63 @@
 				FC0013226D41669D3D157853EF926703 /* Pods-ZITOPaySDK_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E70C4E3B0F8AD11E9A82610D994AD90F /* ZITOPayBase */ = {
+			isa = PBXGroup;
+			children = (
+				74422D6C99DAB044120BFDE9D121D272 /* ZITOPayReq.h */,
+				614636A8F985C55F2D3A2465E7E73814 /* ZITOPayReq.m */,
+				647C265592111CDFD9CA1410F08C7FFD /* ZITOPayResp.h */,
+				F00AF0AD9B339CAD8EC128A1C91B50CB /* ZITOPayResp.m */,
+			);
+			name = ZITOPayBase;
+			path = ZITOPayBase;
+			sourceTree = "<group>";
+		};
+		EAB87BA9005D7C9F49B1CFEF6C56A193 /* SandBox */ = {
+			isa = PBXGroup;
+			children = (
+				4B906896D8456EE4AD0456E18BEA3156 /* PaySandBoxViewController.h */,
+				8F9E8D47B9FAC40D44132E62F8EC5D4A /* PaySandBoxViewController.m */,
+				20A375118F44E5A21AF494DD12A54C33 /* ZITOSandBoxAdapter */,
+			);
+			name = SandBox;
+			path = SandBox;
+			sourceTree = "<group>";
+		};
+		F65EF8BA2C6BC56F6AF3C7B4A6A1219A /* ZITONetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CA616D58B5F3F75F89BB5CF092AA8039 /* ZITOHTTPSessionManager.h */,
+				B238A037E14984C1A7F8B57ADA815ADC /* ZITOHTTPSessionManager.m */,
+				6C787BE892F33D6E5360C8B7F609E3C5 /* ZITONetworking.h */,
+				1A045DC3B0A674F487700271A3E46DBE /* ZITONetworkReachabilityManager.h */,
+				66ACE223F1453FF29A259C9860A4286B /* ZITONetworkReachabilityManager.m */,
+				E8CD4729A43606F71BD854DBBECA7391 /* ZITOSecurityPolicy.h */,
+				525D28C4560C5E94F55D3259AB07530C /* ZITOSecurityPolicy.m */,
+				388CD9870BD3334F3B31330ACAC7BAFC /* ZITOURLRequestSerialization.h */,
+				0A6EBEADDEC2CB0A84D5DD2BCBDBDAF5 /* ZITOURLRequestSerialization.m */,
+				1522D115416563154B1D1CBF44D2D427 /* ZITOURLResponseSerialization.h */,
+				B75849ADDBFA4A1A73EF97C3B828DED6 /* ZITOURLResponseSerialization.m */,
+				D943DBCC0A6A678851336283AB1C2B9B /* ZITOURLSessionManager.h */,
+				4A6D8C10C7E0EA4AB70198BB3D809C48 /* ZITOURLSessionManager.m */,
+			);
+			name = ZITONetworking;
+			path = ZITONetworking;
+			sourceTree = "<group>";
+		};
+		F9ADD1068A91B1B7D8B9E328B65756F7 /* ZITOPay */ = {
+			isa = PBXGroup;
+			children = (
+				9B86AD0F62D69CDD35729165FBBA0AB6 /* Classes */,
+				FED02F5877A0C223A58D2FCCDDE90DEC /* Protocol */,
+				6EA9DF723B7D8FB80970E32FEEEFDDB9 /* Request */,
+				EAB87BA9005D7C9F49B1CFEF6C56A193 /* SandBox */,
+				BCFDB7A8E5414C6DD7CCE559882065FF /* Utils */,
+			);
+			name = ZITOPay;
+			path = ZITOPay;
 			sourceTree = "<group>";
 		};
 		FC0013226D41669D3D157853EF926703 /* Pods-ZITOPaySDK_Tests */ = {
@@ -630,6 +854,16 @@
 			);
 			name = "Pods-ZITOPaySDK_Tests";
 			path = "Target Support Files/Pods-ZITOPaySDK_Tests";
+			sourceTree = "<group>";
+		};
+		FED02F5877A0C223A58D2FCCDDE90DEC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F3A6777F75771111BF30818F9F6EB4D5 /* ZITOPayAdapter.h */,
+				550CACE00F90785A918988176C6728A1 /* ZITOPayAdapter.m */,
+			);
+			name = Protocol;
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,6 +897,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E53B0571D14535EF03951900B6DFB49 /* Pods-ZITOPaySDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B8EBA66F8BDC3AC25E36D81E47DBF50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9A469CB0542433D960C2B081E025A4 /* NSDictionary+Utils.h in Headers */,
+				673D3BA74AEF72D6A803C6AF903BA30A /* NSString+IsValid.h in Headers */,
+				8BF9E422A6C6B9B4522BADEB4AAF6AA6 /* PaySandBoxViewController.h in Headers */,
+				2EC765AC8F39D6604FF514F71B5F8AC7 /* ZITOBaseReq.h in Headers */,
+				FB77D7E504B3C833122004749D398E48 /* ZITOBaseResp.h in Headers */,
+				2407592E1035305FECCCBF31BC66A5EE /* ZITOCategory.h in Headers */,
+				0139A091EE7A7A302AB8ACECF009F196 /* ZITOHTTPSessionManager.h in Headers */,
+				16906E924039D8877372856267A16651 /* ZITONetworking.h in Headers */,
+				ABFCD09515D460B9BAFBAEA8B8B914A2 /* ZITONetworkReachabilityManager.h in Headers */,
+				51A5BC64AE88FB25968A656FB0538303 /* ZITOPay+Utils.h in Headers */,
+				3072FD6BEB5788A0DCDAD465DB887D7E /* ZITOPay.h in Headers */,
+				3B4B7ABF2C3D19B286CA1943A525B1BD /* ZITOPayAdapter.h in Headers */,
+				B74080D7CD7061AB41963CAAF4627488 /* ZITOPayAdapterProtocol.h in Headers */,
+				E66F046F0D19CA855B525CC32228A6E7 /* ZITOPayCache.h in Headers */,
+				743CB35C7FE871ED727E5BFF7C249A8E /* ZITOPayConfig.h in Headers */,
+				CF188380D890D4A7F10F280249F572DF /* ZITOPayObjects.h in Headers */,
+				B8C51CA7A30782FB8FCED9E5F23FBAF0 /* ZITOPayReq.h in Headers */,
+				8420CDA7FF939F6BC46CE61747C0CF41 /* ZITOPayRequest.h in Headers */,
+				C72C4890ACF806E5807ACE952CB887EB /* ZITOPayResp.h in Headers */,
+				3F0AF8AC54956CFAB94EA663075A0786 /* ZITOPaySDK-umbrella.h in Headers */,
+				D92F37204D96636C08E0BC5C48C018B6 /* ZITOPayUtil.h in Headers */,
+				BA3922D4A3C0FD683E52284ED592A4A2 /* ZITOSandBoxAdapter.h in Headers */,
+				EE561A7F4BFE1F0CB414BBE22B8A658F /* ZITOSecurityPolicy.h in Headers */,
+				6365835702B9849DDD7BB4B51184CE0E /* ZITOURLRequestSerialization.h in Headers */,
+				32E336BB67CC2CE22E9978006B79EA4C /* ZITOURLResponseSerialization.h in Headers */,
+				4F3C7C716A4211E63DB249F24E7A1D5F /* ZITOURLSessionManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,14 +988,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C59F8DDA5C59A185A137598ED2FE2B96 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7FB4938CAEEA92FEF8BE3E3AB41BD2C /* ZITOPaySDK-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -736,9 +995,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F648BCECECA0066931A6C30F0CD60C0 /* Build configuration list for PBXNativeTarget "ZITOPaySDK" */;
 			buildPhases = (
-				E9DF5AB362237F3B110AFADFD70E308E /* Sources */,
+				0F80E7198A75424029ED8C665EAD8F31 /* Sources */,
 				1C29C88D46E17D964D423E9E0DCFB9AF /* Frameworks */,
-				C59F8DDA5C59A185A137598ED2FE2B96 /* Headers */,
+				5B8EBA66F8BDC3AC25E36D81E47DBF50 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -851,6 +1110,35 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0F80E7198A75424029ED8C665EAD8F31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7186AC2552A392A2891C2F7A3AB49B /* NSDictionary+Utils.m in Sources */,
+				0F66D78C0969CA6E8EDBD06A95EC2BDE /* NSString+IsValid.m in Sources */,
+				EE97472E32144D631C6DB625CBA9B532 /* PaySandBoxViewController.m in Sources */,
+				9402C2F8CDD660847C26C36D1496D153 /* ReplaceMe.m in Sources */,
+				443AEEB215CBB31C1D8588CB931C1057 /* ZITOBaseReq.m in Sources */,
+				B33CBEB43D5A85BD7926873C6943F398 /* ZITOBaseResp.m in Sources */,
+				9B22E8CD01BDC94DCD2809B9B9F5771E /* ZITOHTTPSessionManager.m in Sources */,
+				32010CF9FD272BBA6D4D93938CA6FD33 /* ZITONetworkReachabilityManager.m in Sources */,
+				C26CA2C0D976DCF9ED233E2777495483 /* ZITOPay+Utils.m in Sources */,
+				5CFB29413E11F9931BD529877240D49A /* ZITOPay.m in Sources */,
+				21BA7BD8EC17C220A6FB01195838F4E9 /* ZITOPayAdapter.m in Sources */,
+				3E6A05DE703C99458B7ACD46DB342A18 /* ZITOPayCache.m in Sources */,
+				8732841E77626478BE215E2608760C39 /* ZITOPayReq.m in Sources */,
+				3332914C125782E8595196791C291EDE /* ZITOPayRequest.m in Sources */,
+				4134B4394BECA5EDF5571B7F1B5E2752 /* ZITOPayResp.m in Sources */,
+				DD8E5E93B83353C1BD9954C13422BEFD /* ZITOPaySDK-dummy.m in Sources */,
+				FB0A8D657C3C69AD818961B51E3BEEF1 /* ZITOPayUtil.m in Sources */,
+				1BA973BD2D3959FF5FD16D340921D8D5 /* ZITOSandBoxAdapter.m in Sources */,
+				B484C4CD74D5E22E7AE44204B34E2CDF /* ZITOSecurityPolicy.m in Sources */,
+				5205485E6199A53A1919ADAA74DA0552 /* ZITOURLRequestSerialization.m in Sources */,
+				AC80D53C9C975823AD525BA47A902F32 /* ZITOURLResponseSerialization.m in Sources */,
+				289395CB81D183E704B8F443C3667BA3 /* ZITOURLSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		243BC8C89C7A7573107898653E597BA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -924,15 +1212,6 @@
 				A0612BA825C81CE45266B214DF3A8BCB /* EXPMatchers+respondTo.m in Sources */,
 				AE7BBD46BA00A9AC69249ADA56402162 /* EXPUnsupportedObject.m in Sources */,
 				A6CC81FC886EE8FF27EF4DD48D6F8F56 /* NSValue+Expecta.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9DF5AB362237F3B110AFADFD70E308E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC7B3E61E7F02C930D6074E7FCDB35A2 /* ReplaceMe.m in Sources */,
-				F5ED9CC64A1BD6B528117F9EA406E6FC /* ZITOPaySDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
