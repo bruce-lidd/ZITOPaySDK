@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZITOPaySDK'
-  s.version          = ‘0.1.1’
+  s.version          = '0.1.1'
   s.summary          = 'ZITOPaySDK is pay SDK for users and paying is easy'
 
 # This description is used to generate tags and improve search results.
