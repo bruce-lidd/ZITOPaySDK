@@ -1,8 +1,8 @@
 {
   "name": "ZITOPaySDK",
   "version": "0.1.0",
-  "summary": "A short description of ZITOPaySDK.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "ZITOPaySDK is pay SDK for users and paying is easy",
+  "description": "TODO: ZITOPaySDK is a pay SDK ,for users it use easy and good idea ....",
   "homepage": "https://github.com/bruce-lidd/ZITOPaySDK",
   "license": {
     "type": "MIT",
